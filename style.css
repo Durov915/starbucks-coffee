@@ -1,0 +1,512 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+#main {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+#nav {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vw 8vw;
+    position: fixed;
+    z-index: 2;
+    top: 0vh;
+    background-color: white;
+    box-shadow: 6px 4px 141px -25px black;
+
+}
+
+#nav_part_1 {
+    display: flex;
+    align-items: center;
+    gap: 4vw;
+}
+
+#nav_part_1>img {
+    height: 2.8vw;
+}
+
+#nav_part_1>h3 {
+    font-size: 1.1vw;
+    font-weight: 400;
+}
+
+#nav_part_1>h3:hover {
+    border-bottom: 2px solid black;
+}
+
+#nav_part_2 {
+    display: flex;
+    align-items: center;
+    gap: 5vw;
+}
+
+#nav_part_2>.search {
+    height: 2.2vw;
+    width: 18vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+    border-radius: 50px;
+    border: none;
+    font-size: 1vw;
+    box-shadow: 3px 5px 5px rgb(236, 232, 232);
+}
+
+.search:focus {
+    border: 1px solid;
+}
+
+.search>input {
+    border: none;
+    width: 13vw;
+}
+
+.search>:placeholder-shown {
+    margin-left: -25px;
+}
+
+.search>input,
+select,
+textarea {
+    outline: none;
+}
+
+#nav_part_2>img {
+    height: 2vw;
+    width: 2vw;
+    cursor: pointer;
+}
+
+#heading {
+    height: 80px;
+    width: 100%;
+    color: white;
+    background-color: #1E3932;
+    padding: 1vw 8vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 14vh;
+}
+
+#heading>h1 {
+    font-size: 1.4vw;
+    font-weight: 400;
+}
+
+#heading>button {
+    padding: 0.5vw 1.4vw;
+    font-size: 0.8vw;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 50px;
+}
+
+#nav_part_1:hover h3 {
+    border-bottom: 2px sild black;
+    cursor: pointer;
+}
+
+#content {
+    width: 100%;
+    padding: 1vw 8vw;
+
+}
+
+#content_part_1 {
+    width: 100%;
+}
+
+#content_part_1>h1 {
+    padding: 0.5vw 0;
+    font-size: 1.8vw;
+    font-weight: 600;
+}
+
+#part1_1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1vw 0vw;
+}
+
+.img1>img {
+    height: 7vw;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.img1>h5 {
+    text-align: center;
+    font-size: 1vw;
+    font-weight: 600;
+}
+
+.img1>img:hover {
+    border: 2px solid green;
+}
+
+#content_part_2 {
+    background-color: #DFC49D;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 4.5vw;
+    border: 1px solid #99661e;
+    border-radius: 12px;
+}
+
+#content_part_2 img {
+    height: 14vw;
+}
+
+#part2_1 {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 2vw;
+}
+
+#content_part_2 button {
+    background-color: #00754A;
+    color: white;
+    padding: 1vw 4.3vw;
+    border-radius: 50px;
+    border: none;
+    margin-top: 8vw;
+    margin-right: 3vw;
+}
+
+#content_part_2>button:hover {
+    background-color: #005a3a;
+    cursor: pointer;
+
+}
+
+#part2_2>p {
+    font-size: 1vw;
+    margin: 1.1vw 0;
+}
+
+#part2_2>h2 {
+    font-size: 1.6vw;
+    font-weight: 600;
+}
+
+#part2_2>h6 {
+    font-size: 0.8vw;
+    margin-top: 2vw;
+    font-weight: 450;
+}
+
+#content_part_3 {
+    margin-top: 2vw;
+    position: relative;
+}
+
+#content_part_3>h1 {
+    padding: 0.5vw 0;
+    font-size: 1.8vw;
+    font-weight: 600;
+}
+
+#part3 {
+    width: 100%;
+    height: 48vh;
+    margin-top: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5vw;
+}
+
+.part3_1 {
+    background-color: #EDEBE9;
+    border: 2px solid #c2bdbdc1;
+    box-shadow: 2px 2px 10px #c2bdbdc1;
+    border-radius: 10px;
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+}
+
+.part3_1 img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+}
+
+.part31 {
+    padding: 1vw;
+}
+
+.part31 h2 {
+    font-size: 1.2vw;
+    line-height: 1.2vw;
+}
+
+.part31 h6 {
+    font-weight: 400;
+    margin-bottom: 0.7vw;
+}
+
+.part31 p {
+    font-size: 0.9vw;
+    margin-bottom: 1vw;
+}
+
+.part32 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.part32 h6 {
+    font-size: 1vw;
+    font-weight: 800;
+}
+
+.part32 button {
+    padding: 0.3vw 1vw;
+    background-color: #00754A;
+    border: none;
+    border-radius: 50px;
+    font-size: 0.9vw;
+    font-weight: 500;
+    cursor: pointer;
+    color: white;
+}
+
+#content2 {
+    width: 100%;
+    margin-top: 5vw;
+}
+
+#content2_1 {
+    height: 35vh;
+    width: 100%;
+    padding: 1vw 8vw;
+    background-color: #EDEBE9;
+}
+
+#content2_1>h1 {
+    padding: 0.5vw 0;
+    font-size: 1.8vw;
+    font-weight: 600;
+}
+
+#content2_2 {
+    width: 100%;
+    height: 100%;
+    padding: 0 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content21 {
+    width: 31%;
+    height: 60%;
+    padding: 1vw;
+    border: 2px solid #c2bdbdc1;
+    box-shadow: 2px 2px 10px #c2bdbdc1;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+#b1 {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    height: 65%;
+    gap: 0.3vw;
+    margin-bottom: 0.6vw;
+}
+
+#b2 {
+    width: 25%;
+    height: 100%;
+}
+
+.content21 #b2 img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+#b3 h3 {
+    font-size: 1.1vw;
+    font-weight: 600;
+    margin-bottom: 0.5vw;
+}
+
+#b3 h6 {
+    font-size: vw;
+    font-weight: 200;
+    margin-bottom: 0.5vw;
+}
+
+#content3 {
+    height: 65vh;
+    margin-top: 10vh;
+    width: 100%;
+    padding: 1vw 8vw;
+    background-color: #EDEBE9;
+    cursor: pointer;
+}
+
+#content3>h1 {
+    padding: 0.5vw 0;
+    font-size: 1.8vw;
+    font-weight: 600;
+}
+
+#image {
+    margin-top: 2.5vw;
+    height: 80%;
+    width: 100%;
+    border-radius: 10px;
+    color: white;
+    background-image: url("assets/guni.jpg");
+    background-size: cover;
+    box-shadow: inset 5vw 5vw 5vw 10vw rgba(6, 3, 3, 0.692);
+    opacity: 0.9;
+    transition: all ease 0.2s;
+}
+
+#image:hover {
+    box-shadow: inset 30vw 30vw 30vw 100vw rgba(0, 0, 0, 0.86);
+}
+
+#image button {
+    padding: 0.5vw 4.5vw;
+    border: none;
+    border-radius: 50px;
+    font-size: 1vw;
+    font-weight: 500;
+}
+
+.image1 {
+    z-index: 1;
+}
+
+#image .image1 {
+    padding-top: 10vw;
+    padding-left: 2vw;
+}
+
+#image .image1 h1 {
+    font-size: 2.5vw;
+    margin-bottom: 1vw;
+}
+
+#image .image1 p {
+    font-size: 1vw;
+    margin-bottom: 3vw;
+}
+
+#footer {
+    margin-top: 4VW;
+    height: 64vh;
+    width: 100%;
+    padding: 3vw 8vw;
+    background-color: #0E382C;
+    color: white;
+    cursor: pointer;
+}
+#footer1 {
+    height: 45vh;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+
+#footer1 .first {
+    padding: 2vw 1vw;
+}
+
+#footer1 .footer_links h2 {
+    font-size: 1vw;
+    margin-bottom: 1.7vw;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+    .footer_links h2:hover{
+  color: rgba(128, 128, 128, 0.74);
+   
+}
+.footer_links h6:hover{
+    color: rgba(128, 128, 128, 0.74);
+  }
+  
+#footer1 .footer_links h6 {
+    font-size: 0.9vw;
+    margin-bottom: 2.4vw;
+    font-weight: 300;
+    transition: 0.3s;
+
+}
+
+#footer1 .footer_links1 {
+    display: flex;
+    align-items: center;
+}
+
+#footer .footer_links1>img {
+    width: 1.7vw;
+    margin-right: 1vw;
+    height: 1.7vw;
+    font-weight: 900;
+}
+
+#footer1 .footer_links2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 1vw;
+}
+
+#footer2 {
+    margin-top: 2vw;
+    padding: 1.3vw 0;
+    display: flex;
+    border-top: 1px solid white;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#footer2 #contactus {
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+}
+
+#footer2 #contactus h3 {
+    font-size: 0.9vw;
+    font-weight: 500;
+}
+
+#footer2 h6 {
+    font-weight: 100;
+}
